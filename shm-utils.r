@@ -77,7 +77,7 @@ wavelet.denoise.8 <- function(s, thres=4, quiet=TRUE, autopadding=TRUE) {
     # Stop Redirect stdout/stderr to dev/null
     sink(type = "message")
     sink()
-    close(zz)s
+    close(zz)
   }
   # When 'autopadding' and length(s) is not a multiple of w, remove the paddings
   if ((autopadding) & (isTRUE(all.equal(r, as.integer(r)))==FALSE)) {
@@ -111,7 +111,7 @@ wd.event <- function(s, thres=4,quiet=TRUE) {
     # Stop Redirect stdout/stderr to dev/null
     sink(type = "message")
     sink()
-    close(zz)s
+    close(zz)
   }
   return(s_denoised[1:500])
 }
